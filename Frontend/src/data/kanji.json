@@ -1,0 +1,311 @@
+{
+  "n5": [
+    {
+      "id": "n5-日",
+      "kanji": "日",
+      "meaning": "day, sun",
+      "onyomi": ["ニチ", "ジツ"],
+      "kunyomi": ["ひ", "-び", "-か"],
+      "strokes": 4,
+      "examples": [
+        { "word": "日本", "reading": "にほん", "meaning": "Japan" },
+        { "word": "休日", "reading": "きゅうじつ", "meaning": "holiday" },
+        { "word": "毎日", "reading": "まいにち", "meaning": "every day" }
+      ]
+    },
+    {
+      "id": "n5-月",
+      "kanji": "月",
+      "meaning": "month, moon",
+      "onyomi": ["ゲツ", "ガツ"],
+      "kunyomi": ["つき"],
+      "strokes": 4,
+      "examples": [
+        { "word": "月曜日", "reading": "げつようび", "meaning": "Monday" },
+        { "word": "来月", "reading": "らいげつ", "meaning": "next month" },
+        { "word": "今月", "reading": "こんげつ", "meaning": "this month" }
+      ]
+    },
+    {
+      "id": "n5-人",
+      "kanji": "人",
+      "meaning": "person",
+      "onyomi": ["ジン", "ニン"],
+      "kunyomi": ["ひと"],
+      "strokes": 2,
+      "examples": [
+        { "word": "日本人", "reading": "にほんじん", "meaning": "Japanese person" },
+        { "word": "人気", "reading": "にんき", "meaning": "popularity" },
+        { "word": "三人", "reading": "さんにん", "meaning": "three people" }
+      ]
+    },
+    {
+      "id": "n5-水",
+      "kanji": "水",
+      "meaning": "water",
+      "onyomi": ["スイ"],
+      "kunyomi": ["みず"],
+      "strokes": 4,
+      "examples": [
+        { "word": "水", "reading": "みず", "meaning": "water" },
+        { "word": "水曜日", "reading": "すいようび", "meaning": "Wednesday" },
+        { "word": "水道", "reading": "すいどう", "meaning": "water supply" }
+      ]
+    },
+    {
+      "id": "n5-山",
+      "kanji": "山",
+      "meaning": "mountain",
+      "onyomi": ["サン"],
+      "kunyomi": ["やま"],
+      "strokes": 3,
+      "examples": [
+        { "word": "山", "reading": "やま", "meaning": "mountain" },
+        { "word": "火山", "reading": "かざん", "meaning": "volcano" },
+        { "word": "登山", "reading": "とざん", "meaning": "mountain climbing" }
+      ]
+    },
+    {
+      "id": "n5-学",
+      "kanji": "学",
+      "meaning": "study, learning",
+      "onyomi": ["ガク"],
+      "kunyomi": ["まな-ぶ"],
+      "strokes": 8,
+      "examples": [
+        { "word": "学校", "reading": "がっこう", "meaning": "school" },
+        { "word": "学生", "reading": "がくせい", "meaning": "student" },
+        { "word": "学ぶ", "reading": "まなぶ", "meaning": "to learn" }
+      ]
+    },
+    {
+      "id": "n5-大",
+      "kanji": "大",
+      "meaning": "big",
+      "onyomi": ["ダイ", "タイ"],
+      "kunyomi": ["おお-きい"],
+      "strokes": 3,
+      "examples": [
+        { "word": "大人", "reading": "おとな", "meaning": "adult" },
+        { "word": "大学", "reading": "だいがく", "meaning": "university" },
+        { "word": "大きい", "reading": "おおきい", "meaning": "big" }
+      ]
+    },
+    {
+      "id": "n5-小",
+      "kanji": "小",
+      "meaning": "small",
+      "onyomi": ["ショウ"],
+      "kunyomi": ["ちい-さい", "こ"],
+      "strokes": 3,
+      "examples": [
+        { "word": "小さい", "reading": "ちいさい", "meaning": "small" },
+        { "word": "小学生", "reading": "しょうがくせい", "meaning": "elementary student" },
+        { "word": "小川", "reading": "おがわ", "meaning": "stream" }
+      ]
+    }
+  ],
+  "n4": [
+    {
+      "id": "n4-旅",
+      "kanji": "旅",
+      "meaning": "travel",
+      "onyomi": ["リョ"],
+      "kunyomi": ["たび"],
+      "strokes": 10,
+      "examples": [
+        { "word": "旅行", "reading": "りょこう", "meaning": "trip" },
+        { "word": "旅館", "reading": "りょかん", "meaning": "Japanese inn" },
+        { "word": "旅", "reading": "たび", "meaning": "journey" }
+      ]
+    },
+    {
+      "id": "n4-海",
+      "kanji": "海",
+      "meaning": "sea",
+      "onyomi": ["カイ"],
+      "kunyomi": ["うみ"],
+      "strokes": 9,
+      "examples": [
+        { "word": "海外", "reading": "かいがい", "meaning": "overseas" },
+        { "word": "海", "reading": "うみ", "meaning": "sea" },
+        { "word": "海岸", "reading": "かいがん", "meaning": "coast" }
+      ]
+    },
+    {
+      "id": "n4-音",
+      "kanji": "音",
+      "meaning": "sound",
+      "onyomi": ["オン"],
+      "kunyomi": ["おと", "ね"],
+      "strokes": 9,
+      "examples": [
+        { "word": "音楽", "reading": "おんがく", "meaning": "music" },
+        { "word": "音", "reading": "おと", "meaning": "sound" },
+        { "word": "発音", "reading": "はつおん", "meaning": "pronunciation" }
+      ]
+    },
+    {
+      "id": "n4-春",
+      "kanji": "春",
+      "meaning": "spring",
+      "onyomi": ["シュン"],
+      "kunyomi": ["はる"],
+      "strokes": 9,
+      "examples": [
+        { "word": "春", "reading": "はる", "meaning": "spring" },
+        { "word": "青春", "reading": "せいしゅん", "meaning": "youth" },
+        { "word": "春休み", "reading": "はるやすみ", "meaning": "spring break" }
+      ]
+    },
+    {
+      "id": "n4-夜",
+      "kanji": "夜",
+      "meaning": "night",
+      "onyomi": ["ヤ"],
+      "kunyomi": ["よる"],
+      "strokes": 8,
+      "examples": [
+        { "word": "夜", "reading": "よる", "meaning": "night" },
+        { "word": "夜中", "reading": "よなか", "meaning": "midnight" },
+        { "word": "今夜", "reading": "こんや", "meaning": "tonight" }
+      ]
+    },
+    {
+      "id": "n4-花",
+      "kanji": "花",
+      "meaning": "flower",
+      "onyomi": ["カ"],
+      "kunyomi": ["はな"],
+      "strokes": 7,
+      "examples": [
+        { "word": "花", "reading": "はな", "meaning": "flower" },
+        { "word": "花火", "reading": "はなび", "meaning": "fireworks" },
+        { "word": "花見", "reading": "はなみ", "meaning": "flower viewing" }
+      ]
+    }
+  ],
+  "n3": [
+    {
+      "id": "n3-想",
+      "kanji": "想",
+      "meaning": "thought, imagine",
+      "onyomi": ["ソウ"],
+      "kunyomi": ["おも-う"],
+      "strokes": 13,
+      "examples": [
+        { "word": "感想", "reading": "かんそう", "meaning": "impression" },
+        { "word": "想像", "reading": "そうぞう", "meaning": "imagination" },
+        { "word": "想い", "reading": "おもい", "meaning": "feelings" }
+      ]
+    },
+    {
+      "id": "n3-景",
+      "kanji": "景",
+      "meaning": "scenery",
+      "onyomi": ["ケイ"],
+      "kunyomi": [],
+      "strokes": 12,
+      "examples": [
+        { "word": "景色", "reading": "けしき", "meaning": "scenery" },
+        { "word": "背景", "reading": "はいけい", "meaning": "background" },
+        { "word": "夜景", "reading": "やけい", "meaning": "night view" }
+      ]
+    },
+    {
+      "id": "n3-静",
+      "kanji": "静",
+      "meaning": "quiet",
+      "onyomi": ["セイ", "ジョウ"],
+      "kunyomi": ["しず-か"],
+      "strokes": 14,
+      "examples": [
+        { "word": "静か", "reading": "しずか", "meaning": "quiet" },
+        { "word": "冷静", "reading": "れいせい", "meaning": "calm" },
+        { "word": "静止", "reading": "せいし", "meaning": "stillness" }
+      ]
+    },
+    {
+      "id": "n3-磨",
+      "kanji": "磨",
+      "meaning": "polish",
+      "onyomi": ["マ"],
+      "kunyomi": ["みが-く"],
+      "strokes": 16,
+      "examples": [
+        { "word": "研磨", "reading": "けんま", "meaning": "polishing" },
+        { "word": "磨く", "reading": "みがく", "meaning": "to polish" },
+        { "word": "磨耗", "reading": "まもう", "meaning": "wear" }
+      ]
+    }
+  ],
+  "n2": [
+    {
+      "id": "n2-優",
+      "kanji": "優",
+      "meaning": "gentle, superior",
+      "onyomi": ["ユウ"],
+      "kunyomi": ["やさ-しい"],
+      "strokes": 17,
+      "examples": [
+        { "word": "優しい", "reading": "やさしい", "meaning": "kind" },
+        { "word": "優秀", "reading": "ゆうしゅう", "meaning": "excellent" },
+        { "word": "女優", "reading": "じょゆう", "meaning": "actress" }
+      ]
+    },
+    {
+      "id": "n2-響",
+      "kanji": "響",
+      "meaning": "echo, resound",
+      "onyomi": ["キョウ"],
+      "kunyomi": ["ひび-く"],
+      "strokes": 20,
+      "examples": [
+        { "word": "影響", "reading": "えいきょう", "meaning": "influence" },
+        { "word": "響く", "reading": "ひびく", "meaning": "to resonate" },
+        { "word": "音響", "reading": "おんきょう", "meaning": "acoustics" }
+      ]
+    },
+    {
+      "id": "n2-繊",
+      "kanji": "繊",
+      "meaning": "slender, fiber",
+      "onyomi": ["セン"],
+      "kunyomi": [],
+      "strokes": 17,
+      "examples": [
+        { "word": "繊細", "reading": "せんさい", "meaning": "delicate" },
+        { "word": "繊維", "reading": "せんい", "meaning": "fiber" },
+        { "word": "繊度", "reading": "せんど", "meaning": "fineness" }
+      ]
+    }
+  ],
+  "n1": [
+    {
+      "id": "n1-幽",
+      "kanji": "幽",
+      "meaning": "faint, secluded",
+      "onyomi": ["ユウ"],
+      "kunyomi": [],
+      "strokes": 9,
+      "examples": [
+        { "word": "幽霊", "reading": "ゆうれい", "meaning": "ghost" },
+        { "word": "幽玄", "reading": "ゆうげん", "meaning": "mysterious elegance" },
+        { "word": "幽閉", "reading": "ゆうへい", "meaning": "confinement" }
+      ]
+    },
+    {
+      "id": "n1-朧",
+      "kanji": "朧",
+      "meaning": "hazy, dim",
+      "onyomi": ["ロウ"],
+      "kunyomi": ["おぼろ"],
+      "strokes": 20,
+      "examples": [
+        { "word": "朧月", "reading": "おぼろづき", "meaning": "hazy moon" },
+        { "word": "朧げ", "reading": "おぼろげ", "meaning": "vague" },
+        { "word": "朧", "reading": "おぼろ", "meaning": "haze" }
+      ]
+    }
+  ]
+}

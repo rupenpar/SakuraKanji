@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    @apply font-serifJp text-ink-900 antialiased;
+    @apply bg-sakura-50;
+  }
+
+  #root {
+    min-height: 100svh;
+  }
+}
+
+@layer utilities {
+  .bg-sakura-cinematic {
+    background-image:
+      radial-gradient(1200px 900px at 50% 10%, rgba(248, 215, 218, 0.78), rgba(255, 248, 248, 0) 60%),
+      radial-gradient(900px 700px at 10% 70%, rgba(253, 236, 239, 0.95), rgba(255, 248, 248, 0) 65%),
+      radial-gradient(900px 700px at 90% 75%, rgba(232, 207, 207, 0.65), rgba(255, 248, 248, 0) 62%),
+      radial-gradient(1100px 750px at 50% 88%, rgba(36, 27, 27, 0.08), rgba(255, 248, 248, 0) 58%),
+      linear-gradient(180deg, rgba(255, 248, 248, 1), rgba(253, 236, 239, 0.55));
+  }
+
+  .paper-sheen {
+    background-image:
+      radial-gradient(800px 500px at 50% 20%, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0) 62%),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.08));
+    background-size: 100% 100%, 240% 100%;
+    background-position: 50% 50%, 0% 50%;
+  }
+
+  .soft-glass {
+    @apply bg-white/50 backdrop-blur-xl;
+    @apply border border-white/65;
+    @apply ring-1 ring-ink-900/10;
+  }
+
+  .soft-shadow {
+    box-shadow:
+      0 26px 70px rgba(26, 20, 20, 0.16),
+      0 10px 24px rgba(26, 20, 20, 0.10),
+      inset 0 1px 0 rgba(255, 255, 255, 0.55);
+  }
+}
