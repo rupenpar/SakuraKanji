@@ -56,10 +56,10 @@ export function JlptLevelPage() {
   if (!level) return <Navigate to="/" replace />
 
   return (
-    <div className="relative min-h-screen">
+    <div className="relative min-h-svh">
       <ScenicBackdrop tone="grounded" />
 
-      <main className="relative w-full min-h-screen overflow-y-auto px-4 sm:px-6 pt-4 pb-12">
+      <main className="relative w-full min-h-svh px-4 sm:px-6 pt-4 pb-12">
         <div className="w-full rounded-none border-0 bg-transparent px-0 pt-4 pb-10">
           <div className="flex items-center justify-between gap-4 px-1 sm:px-2">
             <Link
@@ -68,7 +68,7 @@ export function JlptLevelPage() {
             >
               ← 戻る
             </Link>
-            <div className="text-xs tracking-[0.28em] text-ink-900/55">SAKURA JLPT KANJI</div>
+            <div className="text-xs tracking-[0.28em] text-ink-900/55">MADE BY RUPEN</div>
           </div>
 
           <header className="mt-8 text-center">
