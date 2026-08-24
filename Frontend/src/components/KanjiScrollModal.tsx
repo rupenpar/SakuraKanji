@@ -26,7 +26,7 @@ export function KanjiScrollModal({
   return (
     <AnimatePresence>
       {open && entry && layoutId ? (
-        <motion.div className="fixed inset-0 z-50 grid place-items-center p-5 sm:p-8">
+        <motion.div className="fixed inset-0 z-50 grid place-items-center p-3 sm:p-5">
           <motion.button
             type="button"
             className="absolute inset-0 bg-ink-900/16 backdrop-blur-sm"
@@ -40,7 +40,7 @@ export function KanjiScrollModal({
 
           <motion.div
             layoutId={layoutId}
-            className="relative w-[min(94vw,680px)] rounded-[36px] soft-glass soft-shadow overflow-hidden"
+            className="relative w-[min(82vw,560px)] max-h-[84vh] rounded-[32px] soft-glass soft-shadow overflow-hidden"
             transition={springSoft}
           >
             <div className="absolute inset-0 opacity-75" aria-hidden style={{
@@ -56,7 +56,7 @@ export function KanjiScrollModal({
               transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               style={{ transformOrigin: 'top' }}
             >
-              <div className="relative px-6 sm:px-10 pt-8 sm:pt-10 pb-10">
+              <div className="relative px-5 sm:px-7 pt-6 sm:pt-8 pb-6 sm:pb-8">
                 <div
                   aria-hidden
                   className="absolute left-0 right-0 top-0 h-6"
@@ -74,42 +74,42 @@ export function KanjiScrollModal({
                   }}
                 />
 
-                <div className="flex items-start justify-between gap-6">
+                <div className="flex items-start justify-between gap-4 sm:gap-6">
                   <div>
-                    <div className="text-6xl sm:text-7xl leading-none text-ink-900">{entry.kanji}</div>
-                    <div className="mt-3 text-sm tracking-[0.22em] text-ink-700/80">{entry.meaning}</div>
+                    <div className="text-5xl sm:text-6xl leading-none text-ink-900">{entry.kanji}</div>
+                    <div className="mt-2 text-xs sm:text-sm tracking-[0.22em] text-ink-700/80">{entry.meaning}</div>
                   </div>
                   <button
                     type="button"
                     onClick={onClose}
-                    className="shrink-0 rounded-full px-4 py-2 text-xs tracking-[0.26em] text-ink-900/75 border border-ink-900/16 bg-white/38 hover:bg-white/52 transition hover:-translate-y-0.5"
+                    className="shrink-0 rounded-full px-3 py-2 text-[10px] sm:text-xs tracking-[0.26em] text-ink-900/75 border border-ink-900/16 bg-white/38 hover:bg-white/52 transition hover:-translate-y-0.5"
                   >
                     閉じる
                   </button>
                 </div>
 
                 <motion.div
-                  className="mt-8 grid gap-6"
+                  className="mt-6 grid gap-4 sm:gap-5"
                   variants={staggerChildren}
                   initial="hidden"
                   animate="show"
                 >
                   <motion.div variants={itemReveal} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <Detail label="Meaning" value={entry.meaning || '—'} />
+                    <Detail label="Stroke Count" value={String(entry.stroke_count || 0)} />
                     <Detail label="Onyomi" value={entry.onyomi.join(' ・ ') || '—'} />
                     <Detail label="Kunyomi" value={entry.kunyomi.join(' ・ ') || '—'} />
-                    <Detail label="Stroke Count" value={String(entry.stroke_count || 0)} />
                   </motion.div>
 
                   {entry.stroke_order ? (
                     <motion.div variants={itemReveal}>
-                      <div className="text-xs tracking-[0.28em] text-ink-700/70">STROKE ORDER</div>
-                      <div className="mt-3 rounded-2xl border border-ink-900/12 bg-white/30 p-3 ring-1 ring-ink-900/6">
+                      <div className="text-[10px] sm:text-xs tracking-[0.28em] text-ink-700/70">STROKE ORDER</div>
+                      <div className="mt-2 rounded-2xl border border-ink-900/10 bg-white/30 p-3">
                         <img
                           src={entry.stroke_order}
                           alt={`${entry.kanji} stroke order`}
                           loading="lazy"
-                          className="w-full h-auto max-h-[340px] object-contain rounded-xl"
+                          className="w-full h-auto max-h-[240px] object-contain rounded-xl"
                         />
                       </div>
                     </motion.div>
@@ -126,7 +126,7 @@ export function KanjiScrollModal({
 
 function Detail({ label, value }: { label: string; value: string }) {
   return (
-    <div className="rounded-2xl border border-ink-900/12 bg-white/28 px-4 py-3 ring-1 ring-ink-900/6">
+    <div className="rounded-2xl border border-ink-900/10 bg-white/26 px-4 py-3">
       <div className="text-xs tracking-[0.28em] text-ink-700/70">{label}</div>
       <div className="mt-1 text-sm text-ink-900/90">{value}</div>
     </div>

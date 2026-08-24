@@ -56,12 +56,12 @@ export function JlptLevelPage() {
   if (!level) return <Navigate to="/" replace />
 
   return (
-    <div className="relative min-h-svh">
+    <div className="relative min-h-screen">
       <ScenicBackdrop tone="grounded" />
 
-      <main className="relative mx-auto w-full max-w-6xl px-6 sm:px-8 pt-10 pb-16">
-        <div className="rounded-[42px] bg-white/22 backdrop-blur-xl border border-white/55 ring-1 ring-ink-900/12 px-5 sm:px-8 pt-6 pb-10 soft-shadow">
-          <div className="flex items-center justify-between gap-4">
+      <main className="relative w-full min-h-screen overflow-y-auto px-4 sm:px-6 pt-4 pb-12">
+        <div className="w-full rounded-none border-0 bg-transparent px-0 pt-4 pb-10">
+          <div className="flex items-center justify-between gap-4 px-1 sm:px-2">
             <Link
               to="/"
               className="rounded-full border border-ink-900/18 bg-white/38 hover:bg-white/52 transition px-4 py-2 text-xs tracking-[0.26em] text-ink-900/80 shadow-[0_16px_40px_rgba(26,20,20,0.14)] hover:-translate-y-0.5"
@@ -71,7 +71,7 @@ export function JlptLevelPage() {
             <div className="text-xs tracking-[0.28em] text-ink-900/55">SAKURA JLPT KANJI</div>
           </div>
 
-          <header className="mt-10 text-center">
+          <header className="mt-8 text-center">
             <div className="text-[clamp(26px,4.2vmin,44px)] tracking-[0.10em] text-ink-900">
               JLPT {levelLabel}
             </div>
@@ -80,7 +80,7 @@ export function JlptLevelPage() {
             </div>
           </header>
 
-          <section className="mt-12">
+          <section className="mt-10 w-full">
             {loading ? <LoadingState level={levelLabel} /> : null}
 
             {!loading && error ? (
@@ -106,7 +106,7 @@ export function JlptLevelPage() {
             {!loading && !error && list.length === 0 ? <EmptyState level={levelLabel} /> : null}
 
             {!loading && !error && list.length > 0 ? (
-              <div className="mx-auto grid max-w-5xl grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 sm:gap-7 place-items-center">
+              <div className="mx-auto grid w-full max-w-7xl grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 sm:gap-7 place-items-center px-2 sm:px-4">
                 {list.map((k, idx) => (
                   <KanjiBubble
                     key={k.id}

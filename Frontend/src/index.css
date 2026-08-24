@@ -9,16 +9,33 @@
 
   html,
   body {
-    height: 100%;
+    min-height: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    display: none;
   }
 
   body {
     @apply font-serifJp text-ink-900 antialiased;
     @apply bg-sakura-50;
+    overflow-y: auto;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   #root {
-    min-height: 100svh;
+    min-height: 100vh;
   }
 }
 
