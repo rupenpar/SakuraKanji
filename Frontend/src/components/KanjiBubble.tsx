@@ -24,14 +24,14 @@ export const KanjiBubble = memo(function KanjiBubble({
       }
       style={{
         boxShadow:
-          'inset 0 0 0 1px rgba(255,255,255,0.64), inset 0 0 0 2px rgba(36,27,27,0.10), 0 24px 70px rgba(26,20,20,0.14)',
+          'inset 0 0 0 1px rgba(255,255,255,0.64), inset 0 0 0 2px rgba(248,170,184,0.58), 0 24px 70px rgba(26,20,20,0.14)',
       }}
       onClick={onClick}
       whileHover={{
         y: -6,
         scale: 1.07,
         boxShadow:
-          'inset 0 0 0 1px rgba(255,255,255,0.70), inset 0 0 0 2px rgba(36,27,27,0.14), 0 30px 85px rgba(26,20,20,0.18)',
+          'inset 0 0 0 1px rgba(255,255,255,0.70), inset 0 0 0 2px rgba(248,170,184,0.72), 0 30px 85px rgba(26,20,20,0.18)',
       }}
       whileTap={{ scale: 0.99 }}
       initial={{ opacity: 0, y: 10, scale: 0.98 }}

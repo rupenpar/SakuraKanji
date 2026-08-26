@@ -49,7 +49,7 @@ export function KanjiScrollModal({
             }} />
 
             <motion.div
-              className="relative"
+              className="relative max-h-[84vh] overflow-y-auto no-scrollbar"
               initial={{ scaleY: 0.86, opacity: 0.0 }}
               animate={{ scaleY: 1, opacity: 1 }}
               exit={{ scaleY: 0.94, opacity: 0 }}

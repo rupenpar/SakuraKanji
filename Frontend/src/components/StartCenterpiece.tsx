@@ -38,6 +38,15 @@ export function StartCenterpiece({
   const levelOpacity = useTransform(scrollProgress, [0.45, 1], [0, 1])
   const levelY = useTransform(scrollProgress, [0.45, 1], [40, 0])
   const overlayOpacity = useTransform(scrollProgress, [0.45, 1], [0, 1])
+  const levelPointerEvents = useTransform(scrollProgress, [0.43, 0.5], ['none', 'auto'])
+
+  const handleCenterClick = () => {
+    const revealOffset = Math.round(window.innerHeight * 0.7)
+    window.scrollTo({
+      top: window.scrollY + revealOffset,
+      behavior: 'smooth',
+    })
+  }
 
   return (
     <div className="relative h-full w-full overflow-hidden">
@@ -58,8 +67,8 @@ export function StartCenterpiece({
             className="absolute inset-0 grid place-items-center rounded-full soft-glass soft-shadow"
             whileHover={{ scale: 1.01 }}
             whileTap={{ scale: 0.99 }}
-            style={{ pointerEvents: 'none' }}
-            disabled
+            onClick={handleCenterClick}
+            aria-label="Reveal JLPT level bubbles"
           >
             <div className="absolute inset-0 rounded-full overflow-hidden">
               <div
@@ -151,10 +160,10 @@ export function StartCenterpiece({
       />
 
       <motion.div
-        style={{ opacity: levelOpacity, y: levelY }}
-        className="absolute inset-0 z-50 flex flex-nowrap items-center justify-center gap-3 sm:gap-5 md:gap-7 pointer-events-none"
+        style={{ opacity: levelOpacity, y: levelY, pointerEvents: levelPointerEvents }}
+        className="absolute inset-0 z-50 flex flex-nowrap items-center justify-center gap-3 sm:gap-5 md:gap-7"
       >
-        <div className="flex gap-3 sm:gap-5 md:gap-7 pointer-events-auto">
+        <div className="flex gap-3 sm:gap-5 md:gap-7">
           {JLPT_LEVELS.map((level, idx) => (
             <JlptOrbitButton
               key={level.level}
