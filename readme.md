@@ -3,6 +3,9 @@
 Sakura-themed JLPT DB.
 
 ![Starting Screen](Frontend/public/assets/landingpage1.png) 
+![Landing Page](Frontend/public/assets/landingpage2.png)
+![Dashboard](Frontend/public/assets/dashboard1.png)
+![Dashboard Details](Frontend/public/assets/dashboard2.png)
 
 ## Overview
 SakuraKanji is a complete, interactive database for Japanese Kanji study. It features a minimalist, scroll-driven landing page that routes users through all JLPT levels (N5 to N1). 
